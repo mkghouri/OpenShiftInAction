@@ -3,7 +3,6 @@
 <?php
 $author = getenv('AUTHOR');
 $storage_type = getenv('STORAGE_TYPE');
-$server_ip = $_SERVER['SERVER_ADDR'];
 
 echo "<title>Image Library Demo Application by " . $author . "</title>";
 
@@ -56,7 +55,6 @@ img {
 <?php 
 echo "
 <h1>Image Library with " . $storage_type . " storage backend.</h1>
-<h2>Coming to you from " . $server_ip . "!</h2> 
 "
 ?>
 <div class="wrapper" id="upload-form">
